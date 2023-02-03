@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #015989;
+    box-sizing: border-box;
+    
+}
+body{
+  
+    background-image: url(img/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+body p{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+body h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    background: #fad000;
+    border-radius: 6px;
+}
+
+.btn{
+    font-size: 14px;
+    background: #fad000;
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    border: none;
+    padding: 7px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 1s;
+}
+.btn:hover{
+    background: #77cfe7;    
+}
+
+.container{
+    margin: 15px;
+    padding: 25px;
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    background:  #7b90a1;
+    border-radius: 6px; 
+    opacity: 90%; 
+}
+
+.conteinerreinicio{
+    margin: 15px;
+    padding: 25px;
+    background: #009dc8;
+    border: 1px solid #fad000;
+    border-radius: 6px;
+}
+
+.contador{
+    border: 10px solid #fad000;
+    border-radius: 50%;
+    margin: 10px 25vh;
+    padding: 2px 1px ;
+}
+
+/*Argentienda*/
+.shop-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.product{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.product img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 1s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #015989);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 10px;
+    transition: height 1s;
+    
+
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #fad000;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #009dc8;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #f8c85c ;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.layer p{
+    font-size: 15px;
+    font-weight: 450;
+    color: #fad000;
+}
+
+.product:hover img{
+    transform: scale(1.5);
+}
+
+.product:hover .layer{
+    height: 100%;
+
+}
+h5 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fad000;
+}
+
+.btn3:hover{
+    transform: scale(1.8);
+    font-weight: 700;
+    
+}

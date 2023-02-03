@@ -3,10 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="style.css">
+    <title>Truquero</title>
 </head>
 <body>
-    
+
+<div class="container">
+    <h1>Bienvenidos Truqueros</h1>
+
+    <div class="row">
+        <div><h2>Nosotros</h2>
+            <p class="contador" id="contador1">0</p>
+            <button onclick="aumentaA()" class="btn" id="sumnos">Sumar</button>
+            <button onclick="disminuyeA()" class="btn" id="restnos">Restar</button>
+            <div class="conteinerreinicio">
+                <button onclick="resetA()" class="btn" id="reinicio">Reiniciar</button>
+            </div>
+
+        </div>   
+
+        <div><h2>Ellos</h2>
+            <p class="contador" id="contador2">0</p>
+            <button onclick="aumentaB()" class="btn" id="sumellos">Sumar</button>
+            <button onclick="disminuyeB()" class="btn" id="restellos">Restar</button>
+            <div class="conteinerreinicio">
+                <button onclick="resetB()" class="btn" id="reinicio">Reiniciar</button>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="container">
+    <h1>ArgenTienda</h1>
+    <div class="shop-list">
+        <div class="product">
+            <img src="img/pro1.jpg" alt="img1">
+            <div class="layer">
+                <h3>Camiseta</h3>
+                <p>Adidas. Selección Argentina. Tres estrellas</p>
+                
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/pro2.jpg" alt="img2">
+            <div class="layer">
+                <h3>Moto eléctrica</h3>
+                <p>La verdadera Scaloneta. Motor: Rodri de Paul. Cilindradas: Infinitas. Duración de la bateria: Infinita</p>
+                
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/pro3.jpg" alt="img3">
+            <div class="layer">
+                <h3>Combo matero</h3>
+                <p>Termo (como vos), yerbatera, azúcarera, bombilla, y mate (obviamente) </p>
+               
+            </div>
+        </div>
+        <div class="product">
+            <h5>¿Sos hincha de la selección de verdad? 
+                Reventá de un click este botón, y comprate todo.</h5>
+            <button onclick="comprar()" class="btn btn3">COMPRAR YA</button>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script src="script.js"></script>    
 </body>
 </html>
